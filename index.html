@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddha’s Birthday Greeting Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <h1 id="title">Happy Buddha’s Birthday</h1>
+        <div class="font-style-toggle">Change Font Style</div>
+        <div class="image-slider">
+            <img id="slide" src="./r5Vnp7.jpg" alt="Buddha Image 1">
+            <button id="prev">Prev</button>
+            <button id="next">Next</button>
+        </div>
+        <div class="quote-generator">
+            <button id="new-quote">New Quote</button>
+            <p id="quote"></p>
+        </div>
+        <div class="audio-controls">
+            <audio id="audio" controls>
+                <source src="audio.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <div id="countdown"></div>
+        <div class="preferences">
+            <button id="save-preferences">Save Preferences</button>
+            <button id="load-preferences">Load Preferences</button>
+        </div>
+        <div class="api-data">
+            <button id="fetch-data">Fetch Data</button>
+            <div id="api-content"></div>
+        </div>
+        <div class="weather-widget">
+            <button id="get-weather">Get Weather</button>
+            <div id="weather"></div>
+        </div>
+        <div class="map">
+            <div id="map"></div>
+        </div>
+        <div class="modal">
+            <button id="open-modal">Open Modal</button>
+            <div id="modal-content">
+                <span id="close-modal">&times;</span>
+                <p>More Information</p>
+            </div>
+        </div>
+        <div class="drag-and-drop">
+            <div id="drag-container">
+                <div class="draggable" draggable="true">Drag Me</div>
+            </div>
+        </div>
+        <div class="form-validation">
+            <form id="feedback-form">
+                <input type="text" id="name" placeholder="Name">
+                <input type="email" id="email" placeholder="Email">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <canvas id="canvas"></canvas>
+        <div class="game">
+            <button id="start-game">Start Game</button>
+            <div id="game-area"></div>
+        </div>
+        <button id="day-night-toggle">Toggle Day/Night Mode</button>
+        <input type="range" id="font-size-slider" min="10" max="30" value="16">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
